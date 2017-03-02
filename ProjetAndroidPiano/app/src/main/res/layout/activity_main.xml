@@ -1,0 +1,422 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.adam.piano.activity_main"
+    android:focusableInTouchMode="false">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:clickable="true"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white"
+                android:text="DO"
+                android:background="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="RE"
+                android:id="@+id/white1"
+                android:layout_toEndOf="@+id/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="MI"
+                android:textAlignment="gravity"
+                android:id="@+id/white2"
+                android:layout_toEndOf="@+id/white1"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black" />
+
+            <com.example.adam.pianokeyboard.BlackKey
+                android:layout_width="30dp"
+                android:layout_height="150dp"
+                android:id="@+id/black"
+                android:background="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/white2"
+                android:layout_above="@+id/white3" />
+
+
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white3"
+                android:background="@color/white"
+                android:text="FA"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/white2"
+                android:layout_below="@+id/black2" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white4"
+                android:text="SOL"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white3"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black3" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white5"
+                android:text="LA"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white6"
+                android:text="SI"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white5"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black4" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white7"
+                android:text="DO"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white6"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black5" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white8"
+                android:text="RE"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white7"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black6" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white9"
+                android:text="MI"
+                android:background="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/white8"
+                android:layout_alignParentBottom="true" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white10"
+                android:text="FA"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white9"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black7" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white11"
+                android:text="SOL"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white10"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black8" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white12"
+                android:text="LA"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white11"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black9" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white13"
+                android:text="SI"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white12"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white14"
+                android:text="DO"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white13"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black10" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white15"
+                android:text="RE"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white14"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black11" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white16"
+                android:text="MI"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white15"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black12" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white17"
+                android:text="FA"
+                android:background="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/white16"
+                android:layout_alignParentBottom="true" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white18"
+                android:text="SOL"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white17"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black13" />
+
+            <com.example.adam.pianokeyboard.WhiteKey
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white19"
+                android:text="LA"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/white18"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/black14" />
+
+            <com.example.adam.pianokeyboard.BlackKey
+                android:layout_width="30dp"
+                android:layout_height="150dp"
+                android:id="@+id/black2"
+                android:background="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/white2" />
+
+            <com.example.adam.pianokeyboard.BlackKey
+                android:layout_width="30dp"
+                android:layout_height="150dp"
+                android:id="@+id/black3"
+                android:background="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/white3" />
+
+            <com.example.adam.pianokeyboard.BlackKey
+                android:layout_width="30dp"
+                android:layout_height="150dp"
+                android:id="@+id/black4"
+                android:background="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/white5" />
+
+            <com.example.adam.pianokeyboard.BlackKey
+                android:layout_width="30dp"
+                android:layout_height="150dp"
+                android:id="@+id/black5"
+                android:background="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/white6" />
+
+            <com.example.adam.pianokeyboard.BlackKey
+                android:layout_width="30dp"
+                android:layout_height="150dp"
+                android:id="@+id/black6"
+                android:background="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/white7" />
+
+        <com.example.adam.pianokeyboard.WhiteKey
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/white20"
+            android:text="SI"
+            android:background="@color/white"
+            android:layout_toEndOf="@+id/white19"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/black15" />
+
+        <com.example.adam.pianokeyboard.WhiteKey
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/white21"
+            android:text="DO"
+            android:background="@color/white"
+            android:layout_toEndOf="@+id/white20"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+
+        <com.example.adam.pianokeyboard.WhiteKey
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/white22"
+            android:text="RE"
+            android:background="@color/white"
+            android:layout_toEndOf="@+id/white21"
+            android:layout_alignBottom="@+id/white4"
+            android:layout_below="@+id/black16" />
+
+        <com.example.adam.pianokeyboard.WhiteKey
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/white23"
+            android:text="MI"
+            android:background="@color/white"
+            android:layout_toEndOf="@+id/white22"
+            android:layout_alignBottom="@+id/white4"
+            android:layout_below="@+id/black17" />
+
+        <com.example.adam.pianokeyboard.WhiteKey
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/white24"
+            android:text="FA"
+            android:background="@color/white"
+            android:layout_toEndOf="@+id/white23"
+            android:layout_alignBottom="@+id/white4"
+            android:layout_below="@+id/black18" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black7"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white9" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black8"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/white11" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black9"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white11" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black10"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white13" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black11"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white14" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black12"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white15" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black13"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white17" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black14"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white18" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black15"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white19" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black16"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white21" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black17"
+            android:background="@color/black"
+            android:layout_gravity="right|top"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white22" />
+
+        <com.example.adam.pianokeyboard.BlackKey
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:id="@+id/black18"
+            android:background="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/white23" />
+
+    </RelativeLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>
